@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechSpark 2026 Registration</title>
+<script>
+function validateForm(){
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var phone=document.getElementById("phone").value;
+if(name==""){
+alert("Please enter your name.");
+return false;
+}
+if(email==""){
+alert("Please enter your Email ID.");
+return false;
+}
+if(phone==""){
+alert("Please enter your Mobile Number.");
+return false;
+}
+var college=prompt("Enter Your College Name");
+if(college==null||college==""){
+alert("College Name is Required.");
+return false;
+}
+var result=confirm("Do you want to submit the registration?");
+if(result==true){
+alert("🎉 Congratulations "+name+"!\n\nYour registration for TECHSPARK 2026 has been submitted successfully.\n\nCollege : "+college);
+}
+else{
+alert("Registration Cancelled.");
+}
+}
+</script>
+</head>
+<body bgcolor="#E6F7FF">
+<center>
+<h1><font color="darkblue">🚀 TECHSPARK 2026</font></h1>
+<h3>Event Registration Form</h3>
+<img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" width="150">
+<hr width="80%">
+<form>
+<table border="1" cellpadding="10" bgcolor="white" width="70%">
+<tr bgcolor="#003366">
+<th colspan="2"><font color="white">Personal Details</font></th>
+</tr>
+<tr>
+<td>Full Name</td>
+<td><input type="text" id="name" size="35"></td>
+</tr>
+<tr>
+<td>Email ID</td>
+<td><input type="email" id="email" size="35"></td>
+</tr>
+<tr>
+<td>Mobile Number</td>
+<td><input type="text" id="phone" size="35"></td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="g">Male
+<input type="radio" name="g">Female
+<input type="radio" name="g">Other
+</td>
+</tr>
+<tr>
+<td>College Name</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr>
+<td>Department</td>
+<td>
+<select>
+<option>B.Sc Computer Science</option>
+<option>BCA</option>
+<option>B.Com</option>
+<option>BBA</option>
+<option>B.Tech IT</option>
+<option>MCA</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>
+<select>
+<option>I Year</option>
+<option>II Year</option>
+<option>III Year</option>
+<option>IV Year</option>
+<option>PG</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>City</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr>
+<td>State</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr bgcolor="#003366">
+<th colspan="2"><font color="white">Event Details</font></th>
+</tr>
+<tr>
+<td>Select Events</td>
+<td>
+<input type="checkbox">Coding Contest<br>
+<input type="checkbox">Hackathon<br>
+<input type="checkbox">Paper Presentation<br>
+<input type="checkbox">Technical Quiz<br>
+<input type="checkbox">Gaming Tournament<br>
+<input type="checkbox">Web Designing
+</td>
+</tr>
+<tr>
+<td>Workshop</td>
+<td>
+<select>
+<option>Artificial Intelligence</option>
+<option>Cyber Security</option>
+<option>Cloud Computing</option>
+<option>Python Programming</option>
+<option>Full Stack Development</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>T-Shirt Size</td>
+<td>
+<select>
+<option>Small</option>
+<option>Medium</option>
+<option>Large</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Food Preference</td>
+<td>
+<input type="radio" name="food">Vegetarian
+<input type="radio" name="food">Non-Vegetarian
+</td>
+</tr>
+<tr>
+<td>Accommodation Required</td>
+<td>
+<input type="radio" name="stay">Yes
+<input type="radio" name="stay">No
+</td>
+</tr>
+<tr>
+<td>Transportation Required</td>
+<td>
+<input type="radio" name="transport">Yes
+<input type="radio" name="transport">No
+</td>
+</tr>
+<tr>
+<td>Emergency Contact</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr>
+<td>Emergency Phone</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr>
+<td>Upload Student ID</td>
+<td><input type="file"></td>
+</tr>
+<tr>
+<td>Any Previous Experience?</td>
+<td>
+<textarea rows="4" cols="35" placeholder="Tell us about your technical experience..."></textarea>
+</td>
+</tr>
+<tr>
+<td>How did you hear about this event?</td>
+<td>
+<select>
+<option>College Notice</option>
+<option>Instagram</option>
+<option>Facebook</option>
+<option>Friend</option>
+<option>Faculty</option>
+<option>Website</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Rate Your Coding Skills</td>
+<td>
+<select>
+<option>⭐⭐⭐⭐⭐ Excellent</option>
+<option>⭐⭐⭐⭐ Very Good</option>
+<option>⭐⭐⭐ Good</option>
+<option>⭐⭐ Average</option>
+<option>⭐ Beginner</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Terms & Conditions</td>
+<td>
+<input type="checkbox" required>
+I agree to follow all the event rules and regulations.
+</td>
+</tr>
+<tr bgcolor="#003366">
+<th colspan="2"><font color="white">Declaration</font></th>
+</tr>
+<tr>
+<td colspan="2">
+I hereby declare that the information provided above is true and correct to the best of my knowledge. I agree to abide by all the rules and regulations of TechSpark 2026.
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="button" value="Submit Registration" onclick="validateForm()">
+&nbsp;&nbsp;
+<input type="reset" value="Clear Form">
+&nbsp;&nbsp;
+<a href="C:\Users\Akshaya\OneDrive\Desktop\Task5.html">
+<input type="button" value="Back to Home">
+</a>
+</td>
+</tr>
+</table>
+</form>
+<br>
+<table width="70%" bgcolor="#003366" cellpadding="10">
+<tr>
+<td align="center">
+<font color="white">
+<b>TECHSPARK 2026</b><br>
+Innovation • Technology • Excellence<br>
+📧 techspark2026@gmail.com | ☎ +91 9876543210<br>
+© 2026 All Rights Reserved
+</font>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
