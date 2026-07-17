@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Online Aptitude Quiz</title>
+<script>
+function login(){
+var name=document.getElementById("name").value;
+var pass=document.getElementById("pass").value;
+if(name==""){
+alert("Enter Your Name");
+return;
+}
+if(pass==""){
+alert("Enter Your Password");
+return;
+}
+window.location="C:\Users\Akshaya\OneDrive\Desktop\WDD Task7 Quiz.html"
+}
+</script>
+</head>
+<body bgcolor="lavender">
+<center>
+<br><br><br>
+<table border="1" cellpadding="10" width="400" bgcolor="plum">
+<tr bgcolor="purple">
+<th><font color="white" size="6">ONLINE APTITUDE QUIZ</font></th>
+</tr>
+<tr>
+<td align="center">
+<h2>Student Login</h2>
+</td>
+</tr>
+<tr>
+<td>
+<table align="center" cellpadding="8">
+<tr>
+<td>Name</td>
+<td><input type="text" id="name"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" id="pass"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<br>
+<input type="button" value="Login" onclick="login()">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
