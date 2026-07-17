@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechSpark 2026 Registration</title>
+<script>
+function validateForm(){
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var reg=document.getElementById("reg").value;
+if(name==""){
+alert("Enter your Name");
+return false;
+}
+if(email==""){
+alert("Enter your Email");
+return false;
+}
+if(reg==""){
+alert("Enter your Register Number");
+return false;
+}
+var result=confirm("Do you want to submit the registration?");
+if(result==true){
+alert("Registration Successful");
+}
+else{
+alert("Registration Cancelled");
+}
+}
+</script>
+</head>
+<body bgcolor="lightblue">
+<center>
+<h1>TECHSPARK 2026</h1>
+<h3>Registration Form</h3>
+<hr width="80%">
+<form>
+<table border="1" cellpadding="10" width="70%" bgcolor="white">
+<tr bgcolor="darkblue">
+<th colspan="2"><font color="white">Student Details</font></th>
+</tr>
+<tr>
+<td>Name</td>
+<td><input type="text" id="name" size="35"></td>
+</tr>
+<tr>
+<td>Email ID</td>
+<td><input type="email" id="email" size="35"></td>
+</tr>
+<tr>
+<td>Register Number</td>
+<td><input type="text" id="reg" size="35"></td>
+</tr>
+<tr>
+<td>Mobile Number</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr>
+<td>College Name</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr>
+<td>Department</td>
+<td>
+<select>
+<option>B.Sc Computer Science</option>
+<option>BCA</option>
+<option>B.Com</option>
+<option>BBA</option>
+<option>B.Tech</option>
+<option>MCA</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>
+<select>
+<option>First Year</option>
+<option>Second Year</option>
+<option>Third Year</option>
+<option>Final Year</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Place</td>
+<td><input type="text" size="35"></td>
+</tr>
+<tr>
+<td>Event</td>
+<td>
+<select>
+<option>Coding Contest</option>
+<option>Paper Presentation</option>
+<option>Technical Quiz</option>
+<option>Hackathon</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="button" value="Submit" onclick="validateForm()">
+<input type="reset" value="Clear">
+<a href="C:\Users\Akshaya\OneDrive\Desktop\WDD Task5 Index.html"><input type="button" value="Back"></a>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
